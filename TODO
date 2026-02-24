@@ -1,0 +1,9 @@
+# TODOs
+
+- [x] .deb
+- [x] .appimage
+- [ ] add .app, .dmg support
+- [ ] improve .appimage generation as it currently doesn't make a binary in /usr/bin/ - idk if thats intended for appimages to do or not
+- [ ] MOAR FORMATSSSS
+- [ ] .msi
+- [ ] .exe

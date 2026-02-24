@@ -1,0 +1,26 @@
+[prog]
+name = "ship"
+author = "Me"
+arch = "Amd64"
+version = "0.1.0"
+description = "The cross-platform installer generator CLI tool itself."
+
+[files]
+paths = ["./target/release/ship", "./docs"]
+license = "./LICENSE"
+
+[build]
+cmd = "cargo build --release"
+cwd = "./"
+
+[out]
+targets = ["Exe", "Msi", "Dmg", "AppImage", "Deb"]
+
+[vars]
+env = ["RUSTFLAGS=-C target-cpu=native"]
+arg = ["version"]
+cmake = []
+
+[scripts]
+preinstall = "./scripts/preinstall.sh"
+postinstall = "./scripts/postinstall.sh"

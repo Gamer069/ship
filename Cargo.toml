@@ -1,0 +1,15 @@
+[package]
+name = "ship"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+clap = { version = "4.5.60", features = ["derive"] }
+deb = { version = "0.1.2", package = "deb-rust" }
+serde = { version = "1.0.228", features = ["derive"] }
+toml = "1.0.3"
+ar = "0.9.0"
+tar = "0.4.44"
+xz2 = "0.1.7"
+zstd = "0.9.2"
+appimage = "*"
