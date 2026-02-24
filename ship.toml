@@ -19,8 +19,3 @@ targets = ["Exe", "Msi", "Dmg", "AppImage", "Deb"]
 [vars]
 env = ["RUSTFLAGS=-C target-cpu=native"]
 arg = ["version"]
-cmake = []
-
-[scripts]
-preinstall = "./scripts/preinstall.sh"
-postinstall = "./scripts/postinstall.sh"

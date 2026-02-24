@@ -110,13 +110,6 @@ fn default_bin_dir() -> String {
 pub struct Vars {
     pub env: Option<Vec<String>>,   // optional
     pub arg: Option<Vec<String>>,   // optional
-    pub cmake: Option<Vec<String>>, // optional
-}
-
-#[derive(Serialize, Deserialize, Clone, PartialEq, Eq, Debug)]
-pub struct Scripts {
-    pub preinstall: Option<String>,  // optional
-    pub postinstall: Option<String>, // optional
 }
 
 /// Top-level config
@@ -127,5 +120,4 @@ pub struct ShipConfig {
     pub build: Option<Build>,
     pub out: Out,
     pub vars: Option<Vars>,
-    pub scripts: Option<Scripts>,
 }
